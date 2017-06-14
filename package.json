@@ -1,0 +1,23 @@
+{
+  "name": "finput-react",
+  "version": "1.0.0",
+  "description": "A thin wrapper around finput for React apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh1989/finput-react.git"
+  },
+  "keywords": [
+    "finput",
+    "react"
+  ],
+  "author": "Sam Hogarth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sh1989/finput-react/issues"
+  },
+  "homepage": "https://github.com/sh1989/finput-react#readme"
+}
