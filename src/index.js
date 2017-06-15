@@ -26,7 +26,7 @@ class FinputReact extends Component {
       <input
         ref={input => {
           this.input = input;
-          if (this.input ** externalUpdate) {
+          if (this.input && externalUpdate) {
             this.input.setRawValue(value);
           }
         }}
@@ -49,6 +49,12 @@ class FinputReact extends Component {
   componentWillUnmount() {
     this.destroy();
   }
+};
+
+FinputReact.defaultProps = {
+  value: null,
+  onChange: () => {},
+  onBlur: () => {}
 };
 
 export default FinputReact;
