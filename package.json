@@ -1,6 +1,6 @@
 {
   "name": "finput-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A thin wrapper around finput for React apps",
   "main": "dist/index.js",
   "scripts": {
