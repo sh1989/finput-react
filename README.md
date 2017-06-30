@@ -5,7 +5,7 @@ A thin React wrapper around the finput component
 You'll need [finput](https://github.com/scottlogic/finput) as a `peerDependency` in your project, alongside [react](https://github.com/facebook/react).
 From there, simply render the wrapper component.
 
-```
+```jsx
 import FinputReact from 'finput-react';
 
 const render = () => {
@@ -14,6 +14,8 @@ const render = () => {
     onChange={...}
     onBlur={...} />
 };
+
+export default render;
 ```
 
 ## API
@@ -24,7 +26,7 @@ const render = () => {
 ## redux-form
 If you are using [redux-form](https://github.com/erikras/redux-form), then you will notice that the shape of the props passed to a form component is slightly different. This can be addressed by defining a custom proxy component. Here is a full example of rendering a redux form with a `finput` component:
 
-```
+```jsx
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
 import FinputReact from 'finput-react';
