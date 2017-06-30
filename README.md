@@ -20,6 +20,7 @@ export default render;
 
 ## API
 * value - The value of the `finput`. Change this prop to force an update and format of a new value.
+* options - Options to be passed to `finput` upon its initial creation.
 * onChange - Event, fired upon key entry. Raised with the raw, unformatted, value.
 * onBlur - Event, fired when focus is lost. Raised with the raw, unformatted, value.
 

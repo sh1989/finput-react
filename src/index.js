@@ -37,10 +37,10 @@ class FinputReact extends Component {
   }
 
   componentDidMount() {
-    const { value } = this.props;
+    const { value, options } = this.props;
     const { initialUpdate } = this.state;
 
-    this.destroy = finput(this.input);
+    this.destroy = finput(this.input, options);
     if (initialUpdate) {
       this.input.setRawValue(value);
     }
@@ -53,6 +53,7 @@ class FinputReact extends Component {
 
 FinputReact.defaultProps = {
   value: null,
+  options: null,
   onChange: () => {},
   onBlur: () => {}
 };
