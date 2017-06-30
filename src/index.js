@@ -19,7 +19,7 @@ class FinputReact extends Component {
   }
 
   render() {
-    const { onBlur, onChange, value } = this.props;
+    const { onBlur, onChange, value, options, ...others } = this.props;
     const { externalUpdate } = this.state;
 
     return (
@@ -32,6 +32,7 @@ class FinputReact extends Component {
         }}
         onKeyDown={e => { onChange(this.input.rawValue); }}
         onBlur={e => { onBlur(this.input.rawValue); }}
+        {...others}
       />
     );
   }

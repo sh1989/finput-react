@@ -24,6 +24,8 @@ export default render;
 * onChange - Event, fired upon key entry. Raised with the raw, unformatted, value.
 * onBlur - Event, fired when focus is lost. Raised with the raw, unformatted, value.
 
+Note - Properties not specified above are passed to the underlying `<input>`, such as `disabled`.
+
 ## redux-form
 If you are using [redux-form](https://github.com/erikras/redux-form), then you will notice that the shape of the props passed to a form component is slightly different. This can be addressed by defining a custom proxy component. Here is a full example of rendering a redux form with a `finput` component:
 
